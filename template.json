@@ -1,0 +1,35 @@
+{
+  "firing": {
+    "header_color": "red",
+    "header_title": "⚠ {{project_name}} 环境异常告警",
+    "fields": [
+      "**告警名称：** <font color='red'>{{summary}}</font>",
+      "**告警类型：** {{status}}",
+      "**告警级别：** {{severity}}",
+      "**开始时间：** {{starts_at}}",
+      "**结束时间：** {{ends_at}}",
+      "**故障位置：** {{source}}",
+      "**故障描述：** <font color='red'>{{description}}</font>"
+    ]
+  },
+  "resolved": {
+    "header_color": "green",
+    "header_title": "✅ {{project_name}} 环境恢复信息",
+    "fields": [
+      "**告警名称：** <font color='green'>{{summary}}</font>",
+      "**告警类型：** {{status}}",
+      "**告警级别：** {{severity}}",
+      "**开始时间：** {{starts_at}}",
+      "**结束时间：** {{ends_at}}",
+      "**故障位置：** {{source}}",
+      "**恢复故障：** <font color='green'>{{description}}</font>"
+    ]
+  },
+  "project_name": "监控系统",
+  "links": {
+    "grafana": { "text": "grafana", "url": "" },
+    "alertmanager": { "text": "alertmanager", "url": "" },
+    "prometheus": { "text": "prometheus", "url": "" }
+  },
+  "note": "webhook-bridge"
+}
